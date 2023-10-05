@@ -55,13 +55,17 @@ li {
   align-items: center;
   flex-wrap: nowrap;
   transform: translateX(-500%);
-  animation: slideIn 2s ease-in-out forwards;
+  animation: appear 2s ease 0s 1 normal forwards;
 }
 
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-  }
+@keyframes appear {
+  0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 div.ellipsis {
